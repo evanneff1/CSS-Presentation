@@ -9,14 +9,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:title" content="CSS Presentation">
   <meta property="og:site_name" content="Boarder with Rounded Corners">
-  <meta property="og:url" content="">
   <meta property="og:description"
     content="A Presentation explaining how to use CSS to make boarders with rounded corners.">
-  <meta property="og:image" content="">
-  <meta property="og:type" content="website">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="">
   <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
@@ -29,8 +23,8 @@
   <header>
     <nav>
       <ul>
-        <li><a href="#Main">Main</a></li>
-        <li><a href="#Main">Second</a></li>
+        <li><a href="#Overview">Overview</a></li>
+        <li><a href="#SettingBorder">Setting Border</a></li>
         <li><a href="#Main">Third</a></li>
       </ul>
     </nav>
@@ -39,30 +33,58 @@
   <main>
     <article>
       <h1 id="Main">CSS Topic - Creating Boarders with Rounded Corners</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.</p>
-      <h2>Filler Header 1</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.</p>
-      <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="VwBqWGz"
-        data-user="neffster123"
-        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-        <span>See the Pen <a href="https://codepen.io/neffster123/pen/VwBqWGz">
-            CSS Topic - Pen 1</a> by Evan (<a href="https://codepen.io/neffster123">@neffster123</a>)
-          on <a href="https://codepen.io">CodePen</a>.</span>
-        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-      </p>
+      <h2 id="Overview">Overview</h2>
+      <p>The border attribute in CSS is used to add a border around HTML elements. It defines the width, style, and
+        color of the border. The border width can be set using pixel values, such as 1px or 2px, and can also be set to
+        one of several predefined values like thin, medium, or thick. The style of the border can be set to solid,
+        dotted, dashed, double, groove, ridge, inset, or outset. The color of the border can be set using a color name,
+        such as red, or a hexadecimal value, such as #FF0000. The border attribute can be applied to all four sides of
+        an element using the border property, or to each side individually using the border-top, border-right,
+        border-bottom, and border-left properties.</p>
+      <figure>
+        <img src="images/Screenshot 2023-02-02 at 9.12.15 PM.png" alt="Picture of different Style Attributes.">
+        <figcaption>There are a variety of border properties that can be used with <code>border</code>.</figcaption>
+      </figure>
+      <div class="firstsection">
+        <section>
+          <h2 id="SettingBorder">Setting a Border</h2>
+          <p>To set the border of a paragraph in CSS, you can use the border property on the paragraph's selector. For
+            example, to add a solid red border of 2 pixels around all paragraphs in a HTML document, you could use the
+            following CSS code:</p>
+          <p class="codepen" data-height="191" data-default-tab="css,result" data-slug-hash="VwBqWGz"
+            data-editable="true" data-user="neffster123"
+            style="height: 191px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+            <span>See the Pen <a href="https://codepen.io/neffster123/pen/VwBqWGz">
+                CSS Topic - Pen 1</a> by Evan (<a href="https://codepen.io/neffster123">@neffster123</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+          <p>Alternatively, you can set the border on individual sides of the paragraph by using the border-top,
+            border-right, border-bottom, and border-left properties. For example, to add a blue dotted border on the top
+            of
+            all paragraphs, you could use the following CSS code:</p>
+          <p class="codepen" data-height="197" data-default-tab="css,result" data-slug-hash="zYLyjMP"
+            data-editable="true" data-user="neffster123"
+            style="height: 197px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+            <span>See the Pen <a href="https://codepen.io/neffster123/pen/zYLyjMP">
+                CSS Presentation - Pen 2</a> by Evan (<a href="https://codepen.io/neffster123">@neffster123</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+          <p>Note that the border can also be set using the shorthand border-width, border-style, and border-color
+            properties, which allows you to set each property individually. For example, to set the border width to 1
+            pixel,
+            style to solid, and color to green, you could use the following CSS code:</p>
+          <p class="codepen" data-height="191" data-default-tab="css,result" data-slug-hash="ExpGMVB"
+            data-editable="true" data-user="neffster123"
+            style="height: 191px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+            <span>See the Pen <a href="https://codepen.io/neffster123/pen/ExpGMVB">
+                CSS Presentation - Pen 3</a> by Evan (<a href="https://codepen.io/neffster123">@neffster123</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+        </section>
+      </div>
       <h2>Filler Header 2</h2>
       <p>orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
