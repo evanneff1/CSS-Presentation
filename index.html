@@ -25,14 +25,15 @@
       <ul>
         <li><a href="#Overview">Overview</a></li>
         <li><a href="#SettingBorder">Setting Border</a></li>
-        <li><a href="#Main">Third</a></li>
+        <li><a href="#Round">Rounding Corners</a></li>
+        <li><a href="#Circle">Creating a Circle</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <article>
-      <h1 id="Main">CSS Topic - Creating Boarders with Rounded Corners</h1>
+      <h1>CSS Topic - Creating Boarders with Rounded Corners</h1>
       <h2 id="Overview">Overview</h2>
       <p>The border attribute in CSS is used to add a border around HTML elements. It defines the width, style, and
         color of the border. The border width can be set using pixel values, such as 1px or 2px, and can also be set to
@@ -85,17 +86,7 @@
           <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
         </section>
       </div>
-      <h2>Filler Header 2</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-        dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.</p>
+
       <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="zYLyjMP"
         data-user="neffster123"
         style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
@@ -105,13 +96,15 @@
       </p>
       <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-      <h2>Rounding Corners</h2>
+      <h2 id="Round">Rounding Corners</h2>
+      <h3>Basics</h3>
       <p>
         Rounding the corners of your borders, backgrounds, and background images is super useful and extremely easy to
         do.
         Rounding your corners makes everything look a little bit more put together and user friendly. To do so you need
-        to use the "border-radius" attribute in your CSS. You'll then enter a set amount of pixels (for example: 10px)
-        and your borders will automatically round themselves out.
+        to use the <strong><em>border-radius</em></strong> attribute in your CSS. You'll then enter a set amount of
+        pixels (for example: 10px)
+        and your borders will automatically round themselves out:
       </p>
       <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="ZEjwvMp" data-user="jnewell7"
         style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
@@ -121,9 +114,11 @@
       </p>
       <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-      <p>You can use "border-radius" on backgrounds and background images. To do this, you don't need to hard code a
-        border into your html. Just use the "border-radius" on it's own. Notice that the larger the number for the
-        pixels, the more curve there is to the border.</p>
+      <p>You can use <em>border-radius</em> on backgrounds and background images. To do this, you don't need to hard
+        code a
+        border into your html. Just use the <em>border-radius</em> on it's own. Notice that the larger the number for
+        the
+        pixels, the more curve there is to the border:</p>
       <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="MWBLrRb" data-user="jnewell7"
         style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
         <span>See the Pen <a href="https://codepen.io/jnewell7/pen/MWBLrRb">
@@ -132,11 +127,67 @@
       </p>
       <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-      <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="yLqZvBV" data-user="jnewell7" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="yLqZvBV" data-user="jnewell7"
+        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
         <span>See the Pen <a href="https://codepen.io/jnewell7/pen/yLqZvBV">
-        Untitled</a> by Jackson (<a href="https://codepen.io/jnewell7">@jnewell7</a>)
-        on <a href="https://codepen.io">CodePen</a>.</span>
+            Untitled</a> by Jackson (<a href="https://codepen.io/jnewell7">@jnewell7</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
       </p>
+      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+      <h3>Different Curve for Different Corners</h3>
+      <p>
+        You can also assign a value to each corner to get different radii in each one. <strong>Four values -
+          border-radius:</strong> 15px
+        50px 30px 5px; (first value applies to top-left corner, second value applies to top-right corner, third value
+        applies to bottom-right corner, and fourth value applies to bottom-left corner):
+      </p>
+      <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="eYjxqZm" data-user="jnewell7"
+        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/jnewell7/pen/eYjxqZm">
+            Untitled</a> by Jackson (<a href="https://codepen.io/jnewell7">@jnewell7</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+      <p>
+        <strong>Three values - border-radius:</strong> 15px 50px 30px; (first value applies to top-left corner, second
+        value applies to
+        top-right and bottom-left corners, and third value applies to bottom-right corner):
+      </p>
+      <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="MWBLNbW" data-user="jnewell7"
+        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/jnewell7/pen/MWBLNbW">
+            Untitled</a> by Jackson (<a href="https://codepen.io/jnewell7">@jnewell7</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+      <p>
+        <strong>Two values - border-radius:</strong> 15px 50px; (first value applies to top-left and bottom-right
+        corners, and the second
+        value applies to top-right and bottom-left corners):
+      </p>
+      <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="BaPMXQq" data-user="jnewell7"
+        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/jnewell7/pen/BaPMXQq">
+            Untitled</a> by Jackson (<a href="https://codepen.io/jnewell7">@jnewell7</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+      <h3 id="Circle">Creating a Circle</h3>
+      <p>
+        In order to create a full circle, set the <em>border-radius</em> to 50% and choose a value to set both the
+        height and
+        width to:
+      </p>
+      <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="WNKPVJq" data-user="jnewell7"
+        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/jnewell7/pen/WNKPVJq">
+            Untitled</a> by Jackson (<a href="https://codepen.io/jnewell7">@jnewell7</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
       <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
     </article>
   </main>
